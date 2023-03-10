@@ -9,8 +9,8 @@
 <body>
     <h1>Games Review</h1>
     <form action="#" data-th-action="@{/review}" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <label for="user">Name:</label>
+        <input type="text" id="user" name="user" required>
         <br><br>
         <label for="rating">Rating (0-10):</label>
         <input type="number" id="rating" name="rating" min="0" max="10" required>
@@ -18,8 +18,11 @@
         <label for="comment">Comment:</label>
         <textarea id="comment" name="comment" ></textarea>
         <br><br>
-        <label for="gameId">Game ID:</label>
-        <input type="number" id="gameId" name="gameId" required>
+        <label for="gid">Game ID:</label>
+        <input type="number" id="gid" name="gid" required>
+        <br><br>
+        <label for="name">Boardgame Name:</label>
+        <input type="text" id="name" name="name" required>
         <br><br>
         <button type="submit">Submit</button>
     </form>
